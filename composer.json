@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "trampish\\browscap-laravel\\": "src/"
+            "trampish\\browscap\\": "src/"
         }
     },
     "minimum-stability": "stable"

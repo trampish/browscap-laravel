@@ -26,8 +26,8 @@ class BrowscapServiceProvider extends ServiceProvider
 	{
 
 		$this->package('trampish/browscap-laravel');
-		
-	}
+
+}
 
 	/**
 	 * Register the service provider.
@@ -42,15 +42,14 @@ class BrowscapServiceProvider extends ServiceProvider
 		 * Register the browscap instance
 		 */
 
-      $this->app['browscap'] = $this->app->share(function($app)
-      {
+        $this->app['browscap'] = $this->app->share(function($app)
+        {
 
-				$bc = new Browscap(storage_path() . '/cache');
+					$bc = new Browscap(storage_path() . '/cache');
 
-				return $bc->getBrowser();
+					return $bc;
 
-      });
-
+        });
 	}
 
 	/**
@@ -61,6 +60,9 @@ class BrowscapServiceProvider extends ServiceProvider
 
 	public function provides()
 	{
+
 		return ['browscap'];
+
 	}
+
 }
