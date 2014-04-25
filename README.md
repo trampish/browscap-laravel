@@ -1,5 +1,8 @@
 browscap-laravel
 ================
+[![Build Status](https://travis-ci.org/trampish/browscap-laravel.svg?branch=master)](https://travis-ci.org/trampish/browscap-laravel)
+[![Total Downloads](https://poser.pugx.org/trampish/browscap-laravel/downloads.png)](https://packagist.org/packages/trampish/browscap-laravel)
+[![License](https://poser.pugx.org/trampish/browscap-laravel/license.png)](https://packagist.org/packages/trampish/browscap-laravel)
 
 Browscap-PHP integration (Service Provider and Facade) for Laravel 4
 
