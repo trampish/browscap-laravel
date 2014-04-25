@@ -1,6 +1,6 @@
 <?php
 
-namespace trampish\Browscap-laravel;
+namespace trampish\Browscap;
 
 use phpbrowscap\Browscap;
 use Illuminate\Support\ServiceProvider;

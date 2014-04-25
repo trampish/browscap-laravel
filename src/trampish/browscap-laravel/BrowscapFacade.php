@@ -1,4 +1,4 @@
-<?php namespace trampish\Browscap-laravel;
+<?php namespace trampish\Browscap;
 
 use Illuminate\Support\Facades\Facade;
 
