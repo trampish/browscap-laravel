@@ -1,0 +1,24 @@
+{
+    "name": "trampish/browscap-laravel",
+    "description": "Browscap integration (Service Provider and Facade) for Laravel 4",
+    "keywords": ["browscap", "browscap-php", "laravel"],
+    "homepage": "https://github.com/trampish/browscap-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Gabriel",
+            "email": "chris@chrisgabriel.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*",
+        "browscap/browscap-php": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "trampish\\browscap-laravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
