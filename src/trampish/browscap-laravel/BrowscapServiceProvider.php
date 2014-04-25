@@ -1,4 +1,6 @@
-<?php namespace trampish\Browscap-laravel;
+<?php
+
+namespace trampish\Browscap-laravel;
 
 use phpbrowscap\Browscap;
 use Illuminate\Support\ServiceProvider;
@@ -33,14 +35,13 @@ class BrowscapServiceProvider extends ServiceProvider
 		 * Register the browscap instance
 		 */
 
-
         $this->app['browscap'] = $this->app->share(function($app)
         {
 
 					$bc = new Browscap(storage_path() . '/cache');
 
 					return $bc->getBrowser();
-					
+
         });
 	}
 
@@ -51,6 +52,6 @@ class BrowscapServiceProvider extends ServiceProvider
 	 */
 	public function provides()
 	{
-		return ['keenio'];
+		return ['browscap'];
 	}
 }
