@@ -1,4 +1,6 @@
-<?php namespace trampish\Browscap;
+<?php
+
+namespace trampish\Browscap;
 
 use Illuminate\Support\Facades\Facade;
 

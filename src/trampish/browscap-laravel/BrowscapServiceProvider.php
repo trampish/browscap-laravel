@@ -7,11 +7,13 @@ use Illuminate\Support\ServiceProvider;
 
 class BrowscapServiceProvider extends ServiceProvider
 {
+
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
 	 * @var bool
 	 */
+
 	protected $defer = false;
 
 	/**
@@ -19,9 +21,12 @@ class BrowscapServiceProvider extends ServiceProvider
 	 *
 	 * @return void
 	 */
+
 	public function boot()
 	{
+
 		$this->package('trampish/browscap-laravel');
+		
 	}
 
 	/**
@@ -29,20 +34,23 @@ class BrowscapServiceProvider extends ServiceProvider
 	 *
 	 * @return void
 	 */
+
 	public function register()
 	{
+
 		/**
 		 * Register the browscap instance
 		 */
 
-        $this->app['browscap'] = $this->app->share(function($app)
-        {
+      $this->app['browscap'] = $this->app->share(function($app)
+      {
 
-					$bc = new Browscap(storage_path() . '/cache');
+				$bc = new Browscap(storage_path() . '/cache');
 
-					return $bc->getBrowser();
+				return $bc->getBrowser();
 
-        });
+      });
+
 	}
 
 	/**
@@ -50,6 +58,7 @@ class BrowscapServiceProvider extends ServiceProvider
 	 *
 	 * @return array
 	 */
+
 	public function provides()
 	{
 		return ['browscap'];
