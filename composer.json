@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.1.*",
-        "browscap/browscap-php": "1.0.*@dev"
+        "illuminate/support": "4.2.*",
+        "browscap/browscap-php": "dev-master"
     },
     "autoload": {
         "psr-0": {
