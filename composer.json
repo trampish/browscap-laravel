@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.4.0",
         "laravel/laravel": "4.2.*",
-        "browscap/browscap-php": "dev-master"
+        "browscap/browscap-php": "2.0.*"
     },
     "autoload": {
         "psr-0": {
